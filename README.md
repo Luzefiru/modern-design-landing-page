@@ -1,7 +1,53 @@
 # modern-design-landing-page
 A landing page for a mockup company: Modern Design, a brand, web, and graphic design company.
+<img src="./requirements/website-screenshot.png" alt="The Website Screenshot">
 
-## My Favorite Code Snippets
+## Navbar with Vanilla HTML/CSS
+
+```HTML
+<div class="dropdown">
+    <a href="#" class="link"><button class="nav__links__btn">About<div class="dropdown-icon"></div></button></a>
+    <div class="dropdown__contents">
+        <a href="#" class="link"><button class="nav__links__btn">Services</button></a>
+        <a href="#" class="link"><button class="nav__links__btn">Staff</button></a>
+        <a href="#" class="link"><button class="nav__links__btn">Mission &amp; Vision</button></a>
+    </div>
+</div>
+```
+
+```CSS
+.dropdown {
+  position: relative;
+}
+
+.dropdown__contents {
+  display: none; /* changes to flex when you hover on dropdown div */
+  position: absolute; /* set the parent dropdown menu div as position: relative; */
+  background-color: var(--surface);
+  flex-direction: column;
+}
+
+.dropdown:hover .dropdown__contents {
+  display: flex;
+}
+```
+
+```CSS
+.dropdown-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  background: url(../res/menu-right.svg) no-repeat;
+  position: relative;
+  top: 0.5px;
+}
+
+.dropdown:hover .dropdown-icon {
+  background: url(../res/menu-down.svg) no-repeat;
+  top: 0;
+}
+```
+
+## My Favorite Miscellaneous Code Snippets
 
 1. This Creates a Small Indicator For Navbar Links
 
