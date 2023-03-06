@@ -58,6 +58,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .nav__cta__btn:hover {
@@ -103,4 +104,16 @@ nav {
   width: max-content;
   padding: 1rem 1.2rem;
   padding-right: 1.5rem;
+}
+
+/* selected page styles */
+
+.selected::after {
+  position: absolute;
+  content: '';
+  width: 12ch;
+  height: 2px;
+  border-bottom: 5px var(--primary) solid;
+  border-radius: 24px 24px 0 0;
+  bottom: 0;
 }
