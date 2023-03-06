@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Quicksand:wght@400;500;600;700&display=swap');
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+}
+
+:root {
+  --primary: #0a30e1;
+  --primary-variant: #09249c;
+  --secondary: #3e3c56;
+  --surface: #fefeff;
+  --text: #131011;
+  --text-variant: #e0e0e0;
+}
+
+body {
+  background-color: var(--text-variant);
+  font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+  height: 76px;
+  background-color: var(--surface);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+}
+
+/* logo styles */
+
+.nav__logo {
+  font-family: Quicksand;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: var(--text);
+  letter-spacing: 1.5px;
+}
+
+/* navbar cta button styles */
+
+.nav__cta__btn {
+  all: unset;
+  cursor: pointer;
+  padding: 8px 22px;
+  border-radius: 16px;
+  border: 3px solid var(--primary);
+  background-color: var(--primary);
+  color: var(--surface);
+  font-weight: 600;
+}
+
+.nav__cta__btn:hover {
+  border: 3px solid var(--primary-variant);
+  background-color: var(--primary-variant);
+}
+
+/* navbar link styles */
+
+.nav__links {
+  display: flex;
+  padding: 0 24px;
+  height: 100%;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+  font-size: 1.05rem;
+}
+
+.link:hover {
+  color: var(--primary);
+  font-weight: 500;
+}
+
+.nav__links__btn {
+  all: unset;
+  height: 100%;
+  width: 12ch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
