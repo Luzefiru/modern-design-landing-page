@@ -59,11 +59,6 @@ nav {
   font-weight: 600;
 }
 
-.nav__cta__btn:hover {
-  border: 3px solid var(--primary-variant);
-  background-color: var(--primary-variant);
-}
-
 /* navbar link styles */
 
 .nav__links {
@@ -91,4 +86,25 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.nav__cta__btn:hover {
+  border: 3px solid var(--primary-variant);
+  background-color: var(--primary-variant);
+}
+
+/* dropdown menu styles */
+
+.dropdown-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  background: url(../res/menu-right.svg) no-repeat;
+  position: relative;
+  top: 0.5px;
+}
+
+.link:hover .dropdown-icon {
+  background-color: red;
+  background: url(../res/menu-down.svg) no-repeat;
+  top: 0;
 }
