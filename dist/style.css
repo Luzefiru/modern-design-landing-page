@@ -103,8 +103,30 @@ nav {
   top: 0.5px;
 }
 
-.link:hover .dropdown-icon {
+.dropdown:hover .dropdown-icon {
   background-color: red;
   background: url(../res/menu-down.svg) no-repeat;
   top: 0;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown__contents {
+  position: absolute;
+  background-color: var(--surface);
+  display: none;
+  flex-direction: column;
+}
+
+.dropdown:hover .dropdown__contents {
+  display: flex;
+}
+
+.dropdown__contents .nav__links__btn {
+  all: unset;
+  width: max-content;
+  padding: 1rem 1.2rem;
+  padding-right: 1.5rem;
 }
