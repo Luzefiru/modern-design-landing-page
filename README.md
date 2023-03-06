@@ -1,5 +1,6 @@
 # modern-design-landing-page
 A landing page for a mockup company: Modern Design, a brand, web, and graphic design company.
+
 <img src="./requirements/website-screenshot.png" alt="The Website Screenshot">
 
 ## Navbar with Vanilla HTML/CSS
