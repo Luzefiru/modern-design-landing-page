@@ -71,13 +71,13 @@ nav {
 .dropdown-icon {
   width: 1.5rem;
   height: 1.5rem;
-  background: url(../res/menu-right.svg) no-repeat;
+  background: url(./res/menu-right.svg) no-repeat;
   position: relative;
   top: 0.5px;
 }
 
 .dropdown:hover .dropdown-icon {
-  background: url(../res/menu-down.svg) no-repeat;
+  background: url(./res/menu-down.svg) no-repeat;
   top: 0;
 }
 
