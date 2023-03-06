@@ -34,6 +34,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0 3rem;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
 }
 
 /* logo styles */
@@ -118,6 +119,8 @@ nav {
   background-color: var(--surface);
   display: none;
   flex-direction: column;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  clip-path: inset(0px -10px -10px -10px); /* clips anything starting from the top, but allows 10px on all other sides */
 }
 
 .dropdown:hover .dropdown__contents {
