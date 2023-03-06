@@ -69,9 +69,11 @@ main .main__cta__btn {
   background-color: var(--primary);
   color: var(--surface);
   font-weight: 600;
+  transition: transform 0.125s ease-out;
 }
 
 .main__cta__btn:hover {
   border: 3px solid var(--primary-variant);
   background-color: var(--primary-variant);
+  transform: scale(1.2);
 }
