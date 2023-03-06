@@ -33,14 +33,45 @@ main {
   height: calc(100% - 76px);
   display: grid;
   grid-template-areas: 
-    "headline img"
-    "cta img";
-  grid-template-columns: 1fr 2fr;
+    "left right";
+  grid-template-columns: 1fr 1fr;
   align-items: center;
+  padding: 0 5rem 0 5rem;
 }
 
 main .hero-img {
-  grid-area: img;
+  grid-area: right;
   align-items: center;
   justify-self: center; 
+}
+
+main .headline {
+  grid-area: left;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--text);
+  text-align: center;
+  position: relative;
+  top: -2.5rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+main .main__cta__btn {
+  all: unset;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 8px 36px;
+  border-radius: 16px;
+  border: 3px solid var(--primary);
+  background-color: var(--primary);
+  color: var(--surface);
+  font-weight: 600;
+}
+
+.main__cta__btn:hover {
+  border: 3px solid var(--primary-variant);
+  background-color: var(--primary-variant);
 }
