@@ -19,117 +19,28 @@ body, html {
   --secondary: #3e3c56;
   --surface: #fefeff;
   --text: #131011;
-  --text-variant: #e0e0e0;
+  --text-variant: #cfcfcf;
 }
 
 body {
-  background-color: var(--text-variant);
+  background-color: var(--surface);
   font-family: 'Open Sans', sans-serif;
 }
 
-nav {
-  height: 76px;
-  background-color: var(--surface);
-  display: flex;
-  justify-content: space-between;
+/* main styles */
+
+main {
+  height: calc(100% - 76px);
+  display: grid;
+  grid-template-areas: 
+    "headline img"
+    "cta img";
+  grid-template-columns: 1fr 2fr;
   align-items: center;
-  padding: 0 3rem;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
 }
 
-/* logo styles */
-
-.nav__logo {
-  font-family: Quicksand;
-  font-weight: 700;
-  font-size: 1.8rem;
-  color: var(--text);
-  letter-spacing: 1.5px;
-}
-
-/* navbar cta button styles */
-
-.nav__cta__btn {
-  all: unset;
-  cursor: pointer;
-  padding: 8px 22px;
-  border-radius: 16px;
-  border: 3px solid var(--primary);
-  background-color: var(--primary);
-  color: var(--surface);
-  font-weight: 600;
-}
-
-/* navbar link styles */
-
-.nav__links {
-  display: flex;
-  padding: 0 24px;
-  height: 100%;
-}
-
-.link {
-  text-decoration: none;
-  color: var(--text);
-  font-weight: 500;
-  font-size: 1.05rem;
-}
-
-.link:hover {
-  color: var(--primary);
-  font-weight: 500;
-}
-
-.nav__links__btn {
-  all: unset;
-  height: 100%;
-  width: 12ch;
-  display: flex;
+main .hero-img {
+  grid-area: img;
   align-items: center;
-  justify-content: center;
-}
-
-.nav__cta__btn:hover {
-  border: 3px solid var(--primary-variant);
-  background-color: var(--primary-variant);
-}
-
-/* dropdown menu styles */
-
-.dropdown-icon {
-  width: 1.5rem;
-  height: 1.5rem;
-  background: url(../res/menu-right.svg) no-repeat;
-  position: relative;
-  top: 0.5px;
-}
-
-.dropdown:hover .dropdown-icon {
-  background-color: red;
-  background: url(../res/menu-down.svg) no-repeat;
-  top: 0;
-}
-
-.dropdown {
-  position: relative;
-}
-
-.dropdown__contents {
-  position: absolute;
-  background-color: var(--surface);
-  display: none;
-  flex-direction: column;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
-  clip-path: inset(0px -10px -10px -10px); /* clips anything starting from the top, but allows 10px on all other sides */
-}
-
-.dropdown:hover .dropdown__contents {
-  display: flex;
-}
-
-.dropdown__contents .nav__links__btn {
-  all: unset;
-  width: max-content;
-  padding: 1rem 1.2rem;
-  padding-right: 1.5rem;
+  justify-self: center; 
 }
