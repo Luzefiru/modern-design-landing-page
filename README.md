@@ -26,3 +26,17 @@ A landing page for a mockup company: Modern Design, a brand, web, and graphic de
   /* clips anything starting from the top, but allows 10px on all other sides */
 }
 ```
+
+3. My Favorite Navbar Settings
+
+```CSS
+nav {
+  height: 76px; /* 64px works too */
+  background-color: var(--surface);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+```

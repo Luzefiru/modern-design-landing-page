@@ -77,7 +77,6 @@ nav {
 }
 
 .dropdown:hover .dropdown-icon {
-  background-color: red;
   background: url(../res/menu-down.svg) no-repeat;
   top: 0;
 }
