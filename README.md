@@ -2,6 +2,7 @@
 A landing page for a mockup company: Modern Design, a brand, web, and graphic design company.
 
 <img src="./requirements/website-screenshot.png" alt="The Website Screenshot">
+<img src="./requirements/website-screenshot-active.png" alt="The Website in Active State">
 
 ## Navbar with Vanilla HTML/CSS
 
