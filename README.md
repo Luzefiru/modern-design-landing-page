@@ -51,17 +51,17 @@ A landing page for a mockup company: Modern Design, a brand, web, and graphic de
 
 ## My Favorite Miscellaneous Code Snippets
 
-1. This Creates a Small Indicator For Navbar Links
+1. My Favorite Navbar Settings
 
 ```CSS
-.selected::after {
-  position: absolute;
-  content: '';
-  width: 12ch;
-  height: 2px;
-  border-bottom: 5px var(--primary) solid;
-  border-radius: 24px 24px 0 0;
-  bottom: 0;
+nav {
+  height: 76px; /* 64px works too */
+  background-color: var(--surface);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
 }
 ```
 
@@ -75,16 +75,16 @@ A landing page for a mockup company: Modern Design, a brand, web, and graphic de
 }
 ```
 
-3. My Favorite Navbar Settings
+3. This Creates a Small Indicator For Navbar Links
 
 ```CSS
-nav {
-  height: 76px; /* 64px works too */
-  background-color: var(--surface);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 3rem;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+.selected::after {
+  position: absolute;
+  content: '';
+  width: 12ch;
+  height: 2px;
+  border-bottom: 5px var(--primary) solid;
+  border-radius: 24px 24px 0 0;
+  bottom: 0;
 }
 ```
